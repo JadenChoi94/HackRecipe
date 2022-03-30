@@ -53,6 +53,6 @@ def parsing(host):
 
 
 if __name__ == "__main__":
-    host = "192.168.0.5"  # 자신의 IP 주소로 변경
+    host = "192.168.0.5"  # 내 IP 주소로 변경
     print("START SNIFFING at [%s]" % host)
     parsing(host)
