@@ -58,6 +58,7 @@ def flags_and_offset(int_num):
 
 
 if __name__ == "__main__":
-    host = "192.168.0.5"  # 내 IP 주소로 변경
+    host = "192.168.35.172"  
+    #에러 발생 시 명령 프롬프트(cmd) 에서 ipconfig 쳐서 나오는 본인 IP 기입하면 됨
     print(f"Listening at [{host}]")
     parsing(host)

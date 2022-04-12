@@ -90,7 +90,8 @@ def parsing(host):
 
 
 def main():
-    host = "192.168.0.5"  #IP 주소로
+    host = "192.168.35.172"  
+    #에러 발생 시 명령 프롬프트(cmd) 에서 ipconfig 쳐서 나오는 본인 IP 기입하면 됨
     print("START SNIFFING at [%s]" % host)
     parsing(host)
 
