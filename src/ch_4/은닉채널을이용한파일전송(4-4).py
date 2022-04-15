@@ -2,8 +2,11 @@ from socket import *
 import os
 import struct
 import sys
-
-
+'''
+네트워크에서 프로토콜이란 약속이며 정의하기 나름임
+IP헤더의 데이터에 다른 프로토콜을 구현할 수도 있음
+은닉채널(Covert Channel)은 이렇게 숨겨서 정보를 전송하는 네트워크 공격 기법임
+'''
 def parse_ip_header(ip_header):
     ip_headers = struct.unpack("!BBHHHBBH4s4s", ip_header[:20])
     ip_payloads = ip_header[20:]
@@ -65,3 +68,23 @@ if __name__ == "__main__":
     #에러 발생 시 명령 프롬프트(cmd) 에서 ipconfig 쳐서 나오는 본인 IP 기입하면 됨
     print("START SNIFFING at [%s]" % host)
     parsing(host)
+
+'''
+[실제출력결과]
+====================
+192.168.35.172 => 192.168.35.172
+====================
+192.168.35.172 => 192.168.35.172
+Receiving data... 7168
+====================
+192.168.35.172 => 192.168.35.172
+====================
+192.168.35.172 => 192.168.35.172
+Receiving data... 8876
+====================
+192.168.35.172 => 192.168.35.172
+====================
+192.168.35.172 => 192.168.35.172
+Receiving data... 9563
+Finished !!!
+'''
