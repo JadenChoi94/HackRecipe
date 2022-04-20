@@ -98,3 +98,43 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+'''
+[출력결과]
+==============================
+1039 th packet
+
+[TCP] 192.168.35.172 => 3.34.168.201
+Source Port:  57356
+Destination Port:  443
+Seq Number:  3997051254
+Ack Number:  1491511005
+Offset(Length):  5
+TCP Flags:
+>> CEUAPRSF
+>> 00010000
+Window Size:  1025
+Checksum:  8787
+Urgent Pointer:  0
+TCP Payloads:
+
+==============================
+1040 th packet
+
+[TCP] 192.168.35.172 => 52.68.147.129
+Source Port:  57357
+Destination Port:  9443
+Seq Number:  3147799345
+Ack Number:  1087738886
+Offset(Length):  5
+TCP Flags:
+>> CEUAPRSF
+>> 00010000
+Window Size:  1024
+Checksum:  53020
+Urgent Pointer:  0
+TCP Payloads:
+
+==============================
+'''
